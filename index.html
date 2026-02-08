@@ -20,7 +20,7 @@
   </head>
   <body class="page">
     <header class="header">
-      <span class="header__logo">&lt;/html&gt;</span>
+      <a class="header__logo" href="#">&lt;/html&gt;</a>
       <h1 class="header__title">закрывающий тег</h1>
     </header>
     <main class="main">
@@ -35,7 +35,7 @@
               <img
                 src="./images/stairs.png"
                 alt="Пиксельный персонаж смотрит на длинную лестницу в небо"
-                class="card__image card__image--grayscale"
+                class="card__image card__image-grayscale"
                 width="696"
                 height="696"
                 loading="lazy"
@@ -106,7 +106,7 @@
               <img
                 src="./images/stairs2.png"
                 alt="Пиксельный персонаж и лестница с разбросанными словами о веб-разметке и CSS"
-                class="card__image card__image--contrast"
+                class="card__image card__image-contrast"
                 width="696"
                 height="696"
                 loading="lazy"
@@ -179,7 +179,7 @@
               <img
                 src="./images/stairs3.png"
                 alt="Пиксельный персонаж и лестница с разбросанными словами о программировании и веб-разработке"
-                class="card__image card__image--invert"
+                class="card__image card__image-invert"
                 width="696"
                 height="696"
                 loading="lazy"
@@ -250,7 +250,7 @@
               <img
                 src="./images/stairs4.png"
                 alt="Пиксельный персонаж на лестнице, вокруг разлетевшиеся слова о верстке и веб‑разработке"
-                class="card__image card__image--hue"
+                class="card__image card__image-hue"
                 width="696"
                 height="696"
                 loading="lazy"
@@ -322,7 +322,7 @@
               <img
                 src="./images/stairs5.png"
                 alt="Пиксельный персонаж у лестницы, в облаке мыслей иконки сервисов (Zoom, Telegram и др.)"
-                class="card__image card__image--saturate"
+                class="card__image card__image-saturate"
                 width="696"
                 height="696"
                 loading="lazy"
@@ -396,7 +396,7 @@
               <img
                 src="./images/stairs6.png"
                 alt="Пиксельный персонаж поднимается по лестнице к пиксельной цели на фоне неба"
-                class="card__image card__image--blur"
+                class="card__image card__image-blur"
                 width="696"
                 height="696"
                 loading="lazy"
@@ -467,7 +467,7 @@
               <img
                 src="./images/stairs7.png"
                 alt="Пиксельный персонаж в новогодней шапке на лестнице рядом со снежной ёлкой"
-                class="card__image card__image--brightness"
+                class="card__image card__image-brightness"
                 width="696"
                 height="696"
                 loading="lazy"
@@ -605,12 +605,10 @@
           </div>
         </div>
       </article>
-    </main>
-    <footer class="footer">
-      <div class="footer__body">
+      <div class="cta">
         <button
           type="button"
-          class="button footer__button"
+          class="button cta__button"
           onclick="window['floppy-dialog'].showModal()"
           aria-controls="floppy-dialog"
         >
@@ -623,7 +621,7 @@
           <svg width="39" height="39" class="floppy-disk">
             <use href="./svg/icons.svg#floppy-disk"></use>
           </svg>
-          <span class="button__text">Вставьте дискету, чтобы продолжить</span>
+          <p class="button__text">Вставьте дискету, чтобы продолжить</p>
           <button
             type="button"
             class="button popup__close"
@@ -633,7 +631,7 @@
           </button>
         </dialog>
       </div>
-    </footer>
-    <script src="./scripts/like.js"></script>
+      <script src="./scripts/like.js"></script>
+    </main>
   </body>
 </html>

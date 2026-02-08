@@ -13,7 +13,7 @@
     "formatALL": "npm run format && npm run lintfix",
     "build": "gulp build",
     "dev": "gulp"
-  },
+  },  
   "license": "ISC",
   "author": "",
   "devDependencies": {

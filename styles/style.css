@@ -43,6 +43,7 @@
 
 .header__logo {
   font-size: var(--header-title-size);
+  text-decoration: none;
 }
 
 .header__title {
@@ -102,23 +103,23 @@
   border-block-end: var(--main-color) solid 2px;
 }
 
-.card__image--grayscale {
+.card__image-grayscale {
   filter: contrast(1.1) brightness(0.9) grayscale(0.3);
 }
 
-.card__image--contrast {
+.card__image-contrast {
   filter: contrast(1.1);
 }
 
-.card__image--invert {
+.card__image-invert {
   filter: invert(0.85);
 }
 
-.card__image--hue {
+.card__image-hue {
   filter: hue-rotate(15deg);
 }
 
-.card__image--saturate {
+.card__image-saturate {
   filter: saturate(1.3);
 }
 
@@ -127,11 +128,11 @@
   background: linear-gradient(to top, #dcf3f2 70%, transparent 50%);
 }
 
-.card__image--blur {
+.card__image-blur {
   filter: blur(2px);
 }
 
-.card__image--brightness {
+.card__image-brightness {
   filter: brightness(0.85) contrast(1.4);
 }
 
@@ -199,42 +200,41 @@
 
 .like-icon:hover .core {
   fill: var(--button-fill);
-  transition-delay: 0s;
+  transition: 0.3s linear 0s;
 }
 
 .like-icon:hover .main-body {
   fill: var(--button-fill);
-  transition-delay: 0.05s;
+  transition: 0.3s linear 0.05s;
 }
 
 .like-icon:active .core {
   fill: var(--animation-fill-color);
-  transition-delay: 0s;
+  transition: 0.3s linear 0s;
 }
 
 .like-icon:active .main-body {
   fill: var(--animation-fill-color);
-  transition-delay: 0.05s;
+  transition: 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .core {
   fill: var(--animation-fill-color);
-  transition-delay: 0s;
+  transition: 0.3s linear 0s;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--animation-fill-color);
-  transition-delay: 0.05s;
+  transition: 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--animation-fill-color);
-  transition-duration: 0.3s;
-  transition-delay: 0.06s;
+  transition: 0.3s linear 0.06s;
 }
 
 .is-liked.like-icon .heart {
-  animation: heart-scale 0.3s ease-in 0.1s forwards;
+  animation: heart-scale 0.3s ease-in 0.1s;
   transform-origin: center;
 }
 
@@ -295,9 +295,8 @@
   border: 2px solid var(--main-accent-color);
 }
 
-.footer__body {
-  background-color: var(--background-color);
-  justify-self: center;
+.cta {
+  align-self: center;
 }
 
 .popup[open] {
@@ -313,10 +312,9 @@
   border: var(--main-color) solid 2px;
   line-height: 1.5;
   max-inline-size: 353px;
-  max-block-size: 191px;
 }
 
-.footer__button {
+.cta__button {
   padding: 15px 19px;
   display: flex;
   flex-direction: row;
@@ -326,11 +324,11 @@
 
 @media (width <= 375px) {
 
-  .footer__button {
+  .cta__button {
     flex-direction: column;
   }
 
-  .footer__button .floppy-disk {
+  .cta__button .floppy-disk {
     height: 28px;
     width: 28px;
   }
