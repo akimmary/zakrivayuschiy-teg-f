@@ -313,6 +313,7 @@
   border: var(--main-color) solid 2px;
   line-height: 1.5;
   max-inline-size: 353px;
+  max-block-size: 191px;
 }
 
 .footer__button {
